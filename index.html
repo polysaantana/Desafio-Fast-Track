@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" class="css">
+    <title>Loja Virtual</title>
+</head>
+<body>
+
+    <header class="content" >
+        <div class="titulo">
+            <h3>Loja Virtual</h3>
+        </div>
+        <ul>
+            <nav>
+                <ul class="lista-menu">
+                    <li><a href="#" onclick="openTab(event, 'todos')">Todos os produtos</a></li>
+                    <li><a href="#" onclick="openTab(event, 'feminino')">Feminino</a></li>
+                    <li><a href="#" onclick="openTab(event, 'infantil')">Infantil</a></li>
+                    <li><a href="#" onclick="openTab(event, 'masculino')">Masculino</a></li>
+                    <button class="adicionar">Carrinho</button> 
+                    <div class="search-box">
+                        <input type="text" id="searchInput" class="search-text" placeholder="Search" required>
+                        <a class="search-btn">
+                            <button class="Pesquisar" onclick="pesquisarProdutos()">Pesquisar</button>
+
+                        </a>
+                    </div>
+                       
+                </ul>
+                
+            </nav>
+    </header>
+    
+
+    <!-- produtos femininos -->
+
+    <section  class="tab-content" id="todos">
+        <div class="blusaxadrez">
+            <img src="./imagens/feminino/1.jpg" alt="">
+            <div class="info">
+                <h4>Blusa Xadrez</h4>
+                <h5>R$ 139,90</h5>
+                <button class="adicionar">Adicionar</button>
+        </div>
+    </div>
+
+        <div class="casacocasual">
+            <img src="./imagens/feminino/2.jpg" alt="">
+        <div class="info">
+            <h4>Casaco Casual</h4>
+            <h5>R$ 218,80</h5>
+            <button class="adicionar">Adicionar</button>
+        </div>
+    </div>
+
+        <div class="camisasocial">
+            <img src="./imagens/feminino/3.jpg" alt="">
+            <div class="info">
+                <h4>Camisa Social</h4>
+                <h5>R$ 89,90</h5>
+                <button class="adicionar">Adicionar</button>
+        </div>
+     </div>
+    
+
+        <div class="camisabege">
+        <img src="./imagens/feminino/4.jpg" alt="">
+        <div class="info">
+            <h4>Camisa Bege</h4>
+            <h5>R$ 111,50</h5>
+            <button class="adicionar">Adicionar</button>
+        </div>
+    </div>
+
+        <div class="blusaonça">
+        <img src="./imagens/feminino/5.jpg" alt="">
+        <div class="info">
+            <h4>Blusa Onça</h4>
+            <h5>R$ 119,90</h5>
+            <button class="adicionar">Adicionar</button>
+        </div>
+    </div>
+
+        <div class="camisapena">
+            <img src="./imagens/feminino/6.jpg" alt="">
+            <div class="info">
+                <h4>Camisa Pena</h4>
+                <h5>R$ 69,90</h5>
+                <button class="adicionar">Adicionar</button>
+                
+            </div>
+        </div>
+
+    <!-- produtos infantis -->
+        <div class="camisetainfantilestampastitch">
+            <img src="./imagens/infantil/1.jpg" alt="">
+            <div class="info">
+                <h4>Camiseta Estampa Stitch Feminina</h4>
+                <h5>R$ 35,90</h5>
+                <button class="adicionar">Adicionar</button>
+            </div>
+        </div>
+
+        <div class="camisetainfantilestampasonic">
+            <img src="./imagens/infantil/2.jpg" alt="">
+        <div class="info">
+            <h4>Camiseta Estampa Sonic Masculina</h4>
+            <h5>R$ 35,90</h5>
+            <button class="adicionar">Adicionar</button>
+        </div>
+    </div>
+
+        <div class="vestidoxadrezinfantilfeminino">
+            <img src="./imagens/infantil/3.jpg" alt="">
+            <div class="info">
+                <h4>Vestido Xadrez Vermelho</h4>
+                <h5>R$ 65,90</h5>
+                <button class="adicionar">Adicionar</button>
+            </div>
+        </div>
+
+        <div class="camisetainfantilestampadinossauro">
+            <img src="./imagens/infantil/4.jpg" alt="">
+            <div class="info">
+                <h4>Camiseta Estampa Dinossauro Masculina</h4>
+                <h5>R$ 39,90</h5>
+                <button class="adicionar">Adicionar</button>
+         </div>
+    </div>
+
+        <div class="moletomminnie">
+            <img src="./imagens/infantil/5.jpg" alt="">
+            <div class="info">
+                <h4>Moleton Minnie</h4>
+                <h5>R$ 69,90</h5>
+                <button class="adicionar">Adicionar</button>
+         </div>
+    </div>
+
+        <div class="Vestido Onça">
+            <img src="./imagens/infantil/6.jpg" alt="">
+            <div class="info">
+                <h4>Vestido Onça</h4>
+                <h5>R$ 89,90</h5>
+                <button class="adicionar">Adicionar</button>
+            </div>
+        </div>
+    <!-- produtos masculinos -->
+        <div class="camisaxadrez">
+            <img src="./imagens/masculino/1.jpg" alt="">
+        <div class="info">
+            <h4>Camisa Xadrez</h4>
+            <h5>R$ 35,90</h5>
+            <button class="adicionar">Adicionar</button>
+        </div>
+    </div>
+
+        <div class="Moleton">
+            <img src="./imagens/masculino/2.jpg" alt="">
+        <div class="info">
+            <h4>Moleton</h4>
+            <h5>R$ 85,90</h5>
+            <button class="adicionar">Adicionar</button>
+        </div>
+    </div>
+
+        <div class="camisadesenhoanimado">
+            <img src="./imagens/masculino/3.jpg" alt="">
+        <div class="info">
+            <h4>Camisa Desenho Animado</h4>
+            <h5>R$ 65,90</h5>
+            <button class="adicionar">Adicionar</button>
+        </div>
+    </div>
+
+        <div class="camisapolo">
+            <img src="./imagens/masculino/4.jpg" alt="">
+        <div class="info">
+            <h4>Camisa Polo</h4>
+            <h5>R$ 75,90</h5>
+            <button class="adicionar">Adicionar</button>
+        </div>
+    </div>
+
+        <div class="camisahawai">
+            <img src="./imagens/masculino/5.jpg" alt="">
+        <div class="info">
+            <h4>Camisa Hawai</h4>
+            <h5>R$ 65,90</h5>
+            <button class="adicionar">Adicionar</button>
+        </div>
+    </div>
+
+        <div class="camisasocial">
+            <img src="./imagens/masculino/6.jpg" alt="">
+            <div class="info">
+                <h4>Camisa Social</h4>
+                <h5>R$ 105,90</h5>
+                <button class="adicionar">Adicionar</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="tab-content" id="feminino" style="display: none;">
+        <div class="blusaxadrez">
+            <img src="./imagens/feminino/1.jpg" alt="">
+            <div class="info">
+                <h4>Blusa Xadrez</h4>
+                <h5>R$ 139,90</h5>
+                <button class="adicionar">Adicionar</button>
+        </div>
+    </div>
+
+        <div class="casacocasual">
+            <img src="./imagens/feminino/2.jpg" alt="">
+        <div class="info">
+            <h4>Casaco Casual</h4>
+            <h5>R$ 218,80</h5>
+            <button class="adicionar">Adicionar</button>
+        </div>
+    </div>
+
+        <div class="camisasocial">
+            <img src="./imagens/feminino/3.jpg" alt="">
+            <div class="info">
+                <h4>Camisa Social</h4>
+                <h5>R$ 89,90</h5>
+                <button class="adicionar">Adicionar</button>
+        </div>
+     </div>
+    
+
+        <div class="camisabege">
+        <img src="./imagens/feminino/4.jpg" alt="">
+        <div class="info">
+            <h4>Camisa Bege</h4>
+            <h5>R$ 111,50</h5>
+            <button class="adicionar">Adicionar</button>
+        </div>
+    </div>
+
+        <div class="blusaonça">
+        <img src="./imagens/feminino/5.jpg" alt="">
+        <div class="info">
+            <h4>Blusa Onça</h4>
+            <h5>R$ 119,90</h5>
+            <button class="adicionar">Adicionar</button>
+        </div>
+    </div>
+
+        <div class="camisapena">
+            <img src="./imagens/feminino/6.jpg" alt="">
+            <div class="info">
+                <h4>Camisa Pena</h4>
+                <h5>R$ 69,90</h5>
+                <button class="adicionar">Adicionar</button>
+                
+            </div>
+        </div>
+    </section>
+
+        <section class="tab-content" id="infantil" style="display: none;">
+            <div class="camisetainfantilestampastitch">
+                <img src="./imagens/infantil/1.jpg" alt="">
+                <div class="info">
+                    <h4>Camiseta Estampa Stitch Feminina</h4>
+                    <h5>R$ 35,90</h5>
+                    <button class="adicionar">Adicionar</button>
+                </div>
+            </div>
+    
+            <div class="camisetainfantilestampasonic">
+                <img src="./imagens/infantil/2.jpg" alt="">
+            <div class="info">
+                <h4>Camiseta Estampa Sonic Masculina</h4>
+                <h5>R$ 35,90</h5>
+                <button class="adicionar">Adicionar</button>
+            </div>
+        </div>
+    
+            <div class="vestidoxadrezinfantilfeminino">
+                <img src="./imagens/infantil/3.jpg" alt="">
+                <div class="info">
+                    <h4>Vestido Xadrez Vermelho</h4>
+                    <h5>R$ 65,90</h5>
+                    <button class="adicionar">Adicionar</button>
+                </div>
+            </div>
+    
+            <div class="camisetainfantilestampadinossauro">
+                <img src="./imagens/infantil/4.jpg" alt="">
+                <div class="info">
+                    <h4>Camiseta Estampa Dinossauro Masculina</h4>
+                    <h5>R$ 39,90</h5>
+                    <button class="adicionar">Adicionar</button>
+             </div>
+        </div>
+    
+            <div class="moletomminnie">
+                <img src="./imagens/infantil/5.jpg" alt="">
+                <div class="info">
+                    <h4>Moleton Minnie</h4>
+                    <h5>R$ 69,90</h5>
+                    <button class="adicionar">Adicionar</button>
+             </div>
+        </div>
+    
+            <div class="Vestido Onça">
+                <img src="./imagens/infantil/6.jpg" alt="">
+                <div class="info">
+                    <h4>Vestido Onça</h4>
+                    <h5>R$ 89,90</h5>
+                    <button class="adicionar">Adicionar</button>
+                </div>
+            </div>
+         </section>
+
+         <section class="tab-content" id="masculino" style="display: none;">
+            <div class="camisaxadrez">
+                <img src="./imagens/masculino/1.jpg" alt="">
+            <div class="info">
+                <h4>Camisa Xadrez</h4>
+                <h5>R$ 35,90</h5>
+                <button class="adicionar">Adicionar</button>
+            </div>
+        </div>
+    
+            <div class="Moleton">
+                <img src="./imagens/masculino/2.jpg" alt="">
+            <div class="info">
+                <h4>Moleton</h4>
+                <h5>R$ 85,90</h5>
+                <button class="adicionar">Adicionar</button>
+            </div>
+        </div>
+    
+            <div class="camisadesenhoanimado">
+                <img src="./imagens/masculino/3.jpg" alt="">
+            <div class="info">
+                <h4>Camisa Desenho Animado</h4>
+                <h5>R$ 65,90</h5>
+                <button class="adicionar">Adicionar</button>
+            </div>
+        </div>
+    
+            <div class="camisapolo">
+                <img src="./imagens/masculino/4.jpg" alt="">
+            <div class="info">
+                <h4>Camisa Polo</h4>
+                <h5>R$ 75,90</h5>
+                <button class="adicionar">Adicionar</button>
+            </div>
+        </div>
+    
+            <div class="camisahawai">
+                <img src="./imagens/masculino/5.jpg" alt="">
+            <div class="info">
+                <h4>Camisa Hawai</h4>
+                <h5>R$ 65,90</h5>
+                <button class="adicionar">Adicionar</button>
+            </div>
+        </div>
+    
+            <div class="camisasocial">
+                <img src="./imagens/masculino/6.jpg" alt="">
+                <div class="info">
+                    <h4>Camisa Social</h4>
+                    <h5>R$ 105,90</h5>
+                    <button class="adicionar">Adicionar</button>
+                </div>
+            </div>
+        </section>
+    
+ 
+
+
+    <script src="script.js"></script>
+</body>
+</html>

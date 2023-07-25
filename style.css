@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+/* menu */
+
+.content {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(243, 242, 242);
+    position: fixed;
+    padding-left: 2rem;
+
+}
+
+.titulo h3 {
+    color: black;
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content .lista-menu {
+    width: 9002000;
+    display: flex;
+    align-items:center;
+    list-style: none;
+    
+}
+
+.content .lista-menu li a {
+    padding: 2rem;
+    color: rgb(83, 80, 80);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    align-items: center;
+}
+
+/* styles.css */
+.adicionar {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.4rem;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    width: 60px;
+    height: 25px;
+    justify-content: space-between;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 0%;
+ }
+
+ /* Todos os produtos */
+
+ .tab-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tab-content .infantil {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 300px;
+    height: auto;
+}
+
+section.tab-content img {
+    width: 300px;
+    height: auto;
+    margin-top: 15%;
+    flex-wrap: wrap;
+
+}
+
+ .tab-content .info {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+ }
+
+ .tab-content .info .adicionar {
+    width: 80px;
+    height: 30px;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 1rem;
+    
+}
+
+.search-box {
+    width: 80px;
+    height: 20px;
+    padding-left: 45rem;
+    border-radius: 5px; 
+    margin-left: 10px; 
+    display: flex;
+   
+}
+
+.search-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    padding-left: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+}
+
+.Pesquisar {
+    background-color: #16a752;
+    color: #fff;
+    padding: 0.3rem;
+    border-radius: 5px;
+    display: flex;   
+    font-family: 'Roboto', sans-serif;  
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px; 
+    margin-left: 5px; 
+      
+}
+
+
